@@ -17,7 +17,7 @@ export default function LoginPage() {
         muted={true}
         controls={false}
       /> */}
-      <div className="relative w-[75%] h-full rounded-xl bg-neutral-500 overflow-hidden">
+      <div className="relative w-full lg:w-[75%] h-full rounded-xl bg-neutral-500 overflow-hidden hidden sm:flex">
         <Image src={promo} alt="" className="object-cover" fill />
       </div>
       <FormComponent />
