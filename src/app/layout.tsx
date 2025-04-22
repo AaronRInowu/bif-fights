@@ -4,6 +4,7 @@ import { Toaster } from "react-hot-toast";
 import "./globals.scss";
 import { UserProvider } from "./context/UserContext";
 import { Navbar } from "@/components/Navbar/Navbar";
+import { LayoutContainer } from "@/components/LayoutContainer/LayoutContainer";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -34,7 +35,7 @@ export default function RootLayout({
         <Toaster />
         <UserProvider>
           <Navbar />
-          <div className="main-container">{children}</div>
+          <LayoutContainer>{children}</LayoutContainer>
         </UserProvider>
       </body>
     </html>

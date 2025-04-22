@@ -125,7 +125,7 @@ export default function PaymentComponent() {
           <label htmlFor="">Nombre en la tarjeta</label>
           <input
             type="text"
-            placeholder="ejemplo"
+            placeholder="Kevin Woolfolk"
             value={card.name}
             onChange={(e) => {
               setCard({ ...card, name: e.target.value });
